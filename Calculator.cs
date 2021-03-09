@@ -2,7 +2,15 @@ class Calculator
 {
     static void main(string[] args)
     {
-        
+        int a = 10;
+        int b = 6;
+
+        Console.Writeline("Hasil penambahan  : {0} + {1} = {2}", a, b, penambahan(a, b,));
+        Console.Writeline("Hasil pengurangan : {0} + {1} = {2}", a, b, pengurangan(a, b,));
+
+        Console.Writeline("\nTekan sembarang key");
+        Console.ReadKey();
+
     }
 
     static int penambahan (int a, int b)
@@ -14,4 +22,6 @@ class Calculator
     {
         return a - b;
     }
+
+    
 }
